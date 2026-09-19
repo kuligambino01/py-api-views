@@ -13,6 +13,8 @@ class MovieSerializer(serializers.ModelSerializer):
             "description",
             "duration",
         ]
+        PrimaryKeyRelatedField = ["genres",
+                                  "actors"]
 
 
 class ActorSerializer(serializers.ModelSerializer):
